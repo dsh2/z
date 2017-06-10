@@ -146,7 +146,7 @@ _z() {
                 if( list ) {
                     cmd = "sort -n >&2"
                     for( x in files ) {
-                        if( files[x] ) printf "%-10s %s\n", files[x], x | cmd
+                        if( files[x] ) printf "%-10s\t%s\n", files[x], x | cmd
                     }
                     if( common ) {
                         printf "%-10s %s\n", "common:", common > "/dev/stderr"
